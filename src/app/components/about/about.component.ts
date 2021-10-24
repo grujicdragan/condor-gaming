@@ -24,7 +24,7 @@ export class AboutComponent implements OnInit {
       "img": "assets/rc.png"
     },
     {
-      "img": "../../../assets/lb.png"
+      "img": "assets/lb.png"
     }
   ]
 
