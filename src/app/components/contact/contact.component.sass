@@ -69,7 +69,7 @@ label
     font-size: 14px
     color: $header-text
 input
-    background: rgba(lighten($primary, 40%), .99)
+    background: rgba(lighten($primary, 50%), .99)
     width: 100%
     height: 50px
     border: none
@@ -90,7 +90,7 @@ input
         outline: 3px solid transparent
 
 textarea
-    background: rgba(lighten($primary, 40%), .99)
+    background: rgba(lighten($primary, 50%), .99)
     width: 100%
     border: none
     border-radius: 25px
@@ -112,9 +112,9 @@ textarea
     width: 100%
 .spin
     display: none
-    margin-left: 10px
+    margin: auto 0 auto 10px
 .spin.active
-    display: inline
+    display: inline-block
 
 .notification
     color: #f71616
@@ -129,6 +129,8 @@ textarea
     border: none
     border-radius: 7px
     cursor: pointer
+    &:hover
+        background-color: darken($header-text, 12%)
 
 @media (max-width: 768px)
     .contact-main p
@@ -148,3 +150,5 @@ textarea
         transform: translateX(0)
     .map-text
         margin-top: 30px
+    .condor-btn
+        width: 100%

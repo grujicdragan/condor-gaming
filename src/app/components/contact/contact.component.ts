@@ -45,13 +45,13 @@ export class ContactComponent implements OnInit {
 
   sendMail() {
     if ((this.msgName || this.msgMail || this.msgMessage || this.msgTitle) === "") {
-      this.notification = 'Popunite sva polja!';
+      this.notification = 'Please fill all fields!';
       document.getElementById('notification')!.style.color = "#f71616"
       setTimeout(() => {
         this.notification = '';
       }, 3000);
     } else if (!this.validateEmail(this.msgMail)) {
-      this.notification = 'Unesite validnu e-mail adresu!';
+      this.notification = 'Please enter valid email adress!';
       document.getElementById('notification')!.style.color = "#f71616"
       setTimeout(() => {
         this.notification = '';
@@ -60,7 +60,7 @@ export class ContactComponent implements OnInit {
       let spin = document.getElementById('spin');
       spin.classList.add('active');
       this.loading = true;
-      this.btnText = "Sending...";
+      this.btnText = "SENDING...";
       let contact = {
         name: this.msgName,
         phone: this.msgMail,
@@ -78,13 +78,15 @@ export class ContactComponent implements OnInit {
             spin.classList.remove('active');
           }, 3000);
           this.loading = false;
+          this.notification = 'Something went wrong.';
           this.btnText = "SEND";
         }, () => {
           setTimeout(() => {
             spin.classList.remove('active');
             this.loading = false;
             this.btnText = "SEND";
-            this.messageText = "Message sent."
+            document.getElementById('notification')!.style.color = "#9bff87"
+            this.notification = "Message sent."
           }, 3000);
         }
       );
