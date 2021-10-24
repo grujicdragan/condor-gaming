@@ -28,11 +28,21 @@ h1
     display: flex
     justify-content: space-evenly
     .brand-card
+        width: 200px
+        height: 285px
+        display: flex
+        text-align: center
+        padding: 100px 17px
+        border-radius: 20px
+        transition: .4s ease-in-out
         cursor: pointer
-        transition: .5s ease
+        box-shadow: 0 5px 15px #e0e0e0e8
         &:hover
-            transform: scale(1.1, 1.1)
-            transition: .5s ease
+            transition: .3s linear
+            background-color: lighten($header-text, 45%)
+        img
+            max-width: 93%
+            margin: auto
 
 .icons
     width: 100%
@@ -65,5 +75,7 @@ h1
     .our-brands, .icons
         flex-direction: column
         align-items: center
+    .brand-card
+        margin: 10px
     .icon
         width: 90%

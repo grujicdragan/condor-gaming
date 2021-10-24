@@ -9,22 +9,22 @@ export class HomeComponent implements OnInit {
 
   brands = [
     {
-      "src": "../../../assets/24bettle.png"
+      "src": "../../../assets/24b.png"
     },
     {
-      "src": "../../../assets/rembrandt.png"
+      "src": "../../../assets/bb.png"
     },
     {
-      "src": "../../../assets/sieger.png"
+      "src": "../../../assets/cs.png"
     },
     {
-      "src": "../../../assets/big5.png"
+      "src": "../../../assets/b5.png"
     },
     {
-      "src": "../../../assets/bbets.png"
+      "src": "../../../assets/bb.png"
     },
     {
-      "src": "../../../assets/lucky-bull.png"
+      "src": "../../../assets/lb.png"
     }
   ]
 

@@ -1,1 +1,43 @@
-<p>contact works!</p>
+<div class="contact-container">
+
+    <div class="contact-main">
+        <p>HAVE A QUESTION? WE HAVE ANSWERS!</p>
+        <div class="contact-cards">
+            <div class="contact-card" *ngFor="let icon of contact_icons">
+                <img src="{{icon.img}}" alt="">
+                <p>{{icon.text}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-bottom">
+        <div class="contact-left">
+            <p class="form-header">
+                GET IN TOUCH WITH CONDOR GAMING
+            </p>
+            <p class="form-text">
+                After submitting a request, we will be in touch within 24 hours.
+            </p>
+            <form>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Please, enter your name" [(ngModel)]="msgName" name="name">
+                    <label for="mail">E-mail</label>
+                    <input type="text" placeholder="Please, enter your email" [(ngModel)]="msgMail" name="mail">
+                    <label for="title">Title</label>
+                    <input type="text" placeholder="Message Title" [(ngModel)]="msgTitle" name="title">
+                    <label for="message">Message</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" [(ngModel)]="msgMessage" name="message"></textarea>
+                    <button class="condor-btn" (click)="sendMail()">{{ btnText }} <span class="spin" id="spin"><img src="../../../assets/oval.svg" alt="loader" width="20px"></span></button>
+                    <p class="notification" id="notification">{{ notification }}</p>
+                </form>
+            </form>
+        </div>
+        <div class="contact-right">
+            <p class="map-text">Company Name: Condor Malta Ltd. All rights reserved. Address: 13, ‘Paolo Court’, Giuseppe Cali Street, Ta’ Xbiex TBX 1423, Malta. Email: support@condor-gaming.com</p>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.685319671009!2d14.491311814933963!3d35.90069206377948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e454bad708c2f%3A0x43b7482810a6a462!2sCondor%20Gaming!5e0!3m2!1sen!2srs!4v1635088954649!5m2!1sen!2srs"
+                width="600" height="700" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
+</div>
