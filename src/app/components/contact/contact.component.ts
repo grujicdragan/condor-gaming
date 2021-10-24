@@ -21,15 +21,15 @@ export class ContactComponent implements OnInit {
 
   contact_icons = [
     {
-      "img": "../../../assets/placeholder.png",
+      "img": "assets/placeholder.png",
       "text": "FIND US"
     },
     {
-      "img": "../../../assets/facebook.png",
+      "img": "assets/facebook.png",
       "text": "CHAT WITH US"
     },
     {
-      "img": "../../../assets/phone-call.png",
+      "img": "assets/phone-call.png",
       "text": "GIVE US A CALL"
     }
   ]
