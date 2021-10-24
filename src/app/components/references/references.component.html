@@ -1,0 +1,10 @@
+<div class="references-container">
+    <h1>WHY OUR BRANDS ARE THE BEST</h1>
+    <p class="ref-text">Our team members are driven to think out of the box, to be creative and deploy even the wildest ideas all with one aim… Not to be the biggest in online gaming, but to be the best.</p>
+    <div *ngFor="let brand of brands_ref" class="brands-ref">
+        <div class="brand-img">
+            <img src="{{brand.img}}" alt="">
+        </div>
+        <p>{{brand.text}}</p>
+    </div>
+</div>

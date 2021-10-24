@@ -1,0 +1,27 @@
+<div class="home-container">
+    <div class="hero-image">
+        <img src="../../../assets/condor_gaming.jpg" alt="hero-image">
+    </div>
+    <div>
+        <h1>Who Are We?</h1>
+        <p class="about-text">Condor Gaming Group is a leading and innovative Casino and Sportsbook operator in the iGaming industry.</p>
+        <p class="about-text">With over 8 years of experience in the online gaming industry, 5 launched casino and sports brands, and a 6th one on the way, with unique features presented on each brand, Condor Gaming is the perfect place for enthusiastic, hardworking, and innovative
+            people to build their career.</p>
+        <p class="about-text">Our live brands: Big5 Casino, Rembrandt Casino, Casino Sieger, 24 Bettle Casino, and b-Bets Casino.</p>
+        <h1>Our Brands</h1>
+    </div>
+    <div class="our-brands">
+        <div *ngFor="let brand of brands">
+            <div class="brand-card">
+                <img src="{{brand.src}}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="icons">
+        <div *ngFor="let icon of icons" class="icon">
+            <img src="{{icon.src}}" alt="">
+            <p class="icon-header">{{icon.header}}</p>
+            <p class="icon-text">{{icon.text}}</p>
+        </div>
+    </div>
+</div>

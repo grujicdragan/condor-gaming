@@ -1,0 +1,49 @@
+@import '../../../styles'
+
+.about-container
+    margin-top: 70px
+
+.hero-image-about
+    height: calc( 100vh - 70px )
+    img
+        height: 100%
+        width: 100%
+p
+    width: 75%
+    font-size: 18px
+    text-align: center
+    color: $light-text
+    padding-top: 12px
+    margin: 0 auto
+    line-height: 1.5
+    &:first-of-type
+        margin-top: 45px
+    &:last-of-type
+        margin-bottom: 85px
+
+.brands-abt
+    width: 75%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto 40px
+
+.brands-abt-card
+    width: 110px
+    cursor: pointer
+    img
+        max-width: 100%
+
+@media ( max-width: 768px )
+    .hero-image-about
+        height: calc(50% - 70px)
+        img
+            max-width: 100vw
+    p
+        width: 90%
+        text-align: start
+    .brands-abt
+        flex-direction: column
+        .brands-abt-card
+            width: 90%
+            margin: 20px auto
